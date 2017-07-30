@@ -1,0 +1,15 @@
+
+
+python index.py --dataset dataset --index index.csv
+
+
+
+python search.py --index index.csv --query queries/image5.jpg --result-path dataset
+python search.py --index index.csv --query queries/image1.jpg --result-path dataset
+python search.py --index index.csv --query queries/image6.jpg --result-path dataset
+
+To improve results:
+1. take only best four filtered by color
+2. make those images as query images which are littled zoomed.
+3. run these after object detection.
+4. if needed resize the image.
